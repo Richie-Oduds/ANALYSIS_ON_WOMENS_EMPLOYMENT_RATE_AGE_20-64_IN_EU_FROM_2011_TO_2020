@@ -1,0 +1,3179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>08f481a8de894735a8f5df3ccec4d70e</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div id="2fb92e05-db4f-45e5-bae8-ee825e6d3901" class="cell markdown">
+<h3 id="employment-rate-analysis-in-eu-from-2011-to-2020">EMPLOYMENT
+RATE ANALYSIS IN EU FROM 2011 TO 2020</h3>
+</div>
+<div id="2f90e659-45cb-4c31-8a61-4d4ee5392619" class="cell markdown">
+<h4 id="about-the-dataset">ABOUT THE DATASET</h4>
+<p>Source organisation URL <a href="https://ec.europa.eu/eurostat"
+class="uri">https://ec.europa.eu/eurostat</a> Source activity EU Labour
+Force Survey (EU-LFS) Source reference EU Labour Force Survey (EU LFS)
+data; downloaded from Eurostat’s online database as table t2020_10 Data
+type Survey data Harmonised Harmonised at EU level Time format Years</p>
+<p>Sex Women Age From 20 to 64 years Unit Percentage of total
+population</p>
+</div>
+<div id="f91d90b5-3e9f-4cca-b914-ba441450cd17" class="cell code"
+data-execution_count="1" data-tags="[]">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Libraries import</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div>
+</div>
+<div id="27a06c38-db05-4883-9553-c79fbf29d8a3" class="cell code"
+data-execution_count="2" data-tags="[]">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#loading the dataset for Employment Rate in the EU</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>employment_rate <span class="op">=</span> pd.read_excel(<span class="st">&quot;Employment Rate in the EU.xlsx&quot;</span>)</span></code></pre></div>
+</div>
+<div id="10234730-4060-4871-8ede-d8515cd0a911" class="cell code"
+data-execution_count="3" data-tags="[]">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>employment_rate</span></code></pre></div>
+<div class="output execute_result" data-execution_count="3">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Geographic region\Time</th>
+      <th>2003</th>
+      <th>2004</th>
+      <th>2005</th>
+      <th>2006</th>
+      <th>2007</th>
+      <th>2008</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Austria</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>68.2</td>
+      <td>68.8</td>
+      <td>69.2</td>
+      <td>69.6</td>
+      <td>70.0</td>
+      <td>70.1</td>
+      <td>70.2</td>
+      <td>70.9</td>
+      <td>71.4</td>
+      <td>71.7</td>
+      <td>72.4</td>
+      <td>70.6</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Belgium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>61.0</td>
+      <td>61.6</td>
+      <td>61.5</td>
+      <td>61.7</td>
+      <td>62.1</td>
+      <td>62.9</td>
+      <td>63.0</td>
+      <td>63.0</td>
+      <td>63.6</td>
+      <td>65.5</td>
+      <td>66.5</td>
+      <td>65.6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Bulgaria</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>63.6</td>
+      <td>60.3</td>
+      <td>59.4</td>
+      <td>59.8</td>
+      <td>60.2</td>
+      <td>61.5</td>
+      <td>63.3</td>
+      <td>63.6</td>
+      <td>66.8</td>
+      <td>67.8</td>
+      <td>70.2</td>
+      <td>68.5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Switzerland</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>73.2</td>
+      <td>74.6</td>
+      <td>75.3</td>
+      <td>75.3</td>
+      <td>76.2</td>
+      <td>76.8</td>
+      <td>77.5</td>
+      <td>77.4</td>
+      <td>77.9</td>
+      <td>78.6</td>
+      <td>78.3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Cyprus</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>68.3</td>
+      <td>68.8</td>
+      <td>67.7</td>
+      <td>64.8</td>
+      <td>62.2</td>
+      <td>63.9</td>
+      <td>64.0</td>
+      <td>64.1</td>
+      <td>66.2</td>
+      <td>68.9</td>
+      <td>70.1</td>
+      <td>69.1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Czechia</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>61.4</td>
+      <td>60.9</td>
+      <td>61.7</td>
+      <td>62.5</td>
+      <td>63.8</td>
+      <td>64.7</td>
+      <td>66.4</td>
+      <td>68.6</td>
+      <td>70.5</td>
+      <td>72.2</td>
+      <td>72.7</td>
+      <td>71.9</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Germany</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>67.8</td>
+      <td>68.8</td>
+      <td>70.3</td>
+      <td>70.7</td>
+      <td>71.5</td>
+      <td>72.1</td>
+      <td>72.6</td>
+      <td>73.5</td>
+      <td>74.2</td>
+      <td>74.8</td>
+      <td>75.5</td>
+      <td>74.5</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Denmark</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>73.1</td>
+      <td>72.0</td>
+      <td>71.4</td>
+      <td>71.1</td>
+      <td>71.2</td>
+      <td>71.0</td>
+      <td>71.5</td>
+      <td>72.5</td>
+      <td>73.2</td>
+      <td>73.9</td>
+      <td>74.7</td>
+      <td>74.3</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Euro area (19 countries)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>61.7</td>
+      <td>61.6</td>
+      <td>62.0</td>
+      <td>61.9</td>
+      <td>62.0</td>
+      <td>62.7</td>
+      <td>63.4</td>
+      <td>64.4</td>
+      <td>65.4</td>
+      <td>66.4</td>
+      <td>67.2</td>
+      <td>66.1</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Estonia</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>69.9</td>
+      <td>67.4</td>
+      <td>68.6</td>
+      <td>71.1</td>
+      <td>71.6</td>
+      <td>71.9</td>
+      <td>73.7</td>
+      <td>73.7</td>
+      <td>76.8</td>
+      <td>76.8</td>
+      <td>77.5</td>
+      <td>76.9</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Greece</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>52.4</td>
+      <td>51.2</td>
+      <td>48.1</td>
+      <td>44.6</td>
+      <td>42.9</td>
+      <td>43.8</td>
+      <td>45.6</td>
+      <td>46.2</td>
+      <td>47.4</td>
+      <td>48.3</td>
+      <td>50.5</td>
+      <td>48.7</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Spain</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>56.8</td>
+      <td>56.3</td>
+      <td>56.1</td>
+      <td>54.6</td>
+      <td>53.8</td>
+      <td>54.8</td>
+      <td>56.4</td>
+      <td>58.1</td>
+      <td>59.6</td>
+      <td>61.0</td>
+      <td>62.1</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>European Union - 27 countries (from 2020)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>60.6</td>
+      <td>60.7</td>
+      <td>60.9</td>
+      <td>61.0</td>
+      <td>61.1</td>
+      <td>62.0</td>
+      <td>63.0</td>
+      <td>64.1</td>
+      <td>65.2</td>
+      <td>66.3</td>
+      <td>67.1</td>
+      <td>66.2</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Finland</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>71.5</td>
+      <td>70.3</td>
+      <td>70.7</td>
+      <td>71.3</td>
+      <td>71.0</td>
+      <td>71.2</td>
+      <td>70.7</td>
+      <td>70.8</td>
+      <td>71.3</td>
+      <td>73.4</td>
+      <td>74.5</td>
+      <td>73.8</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>France</td>
+      <td>64.6</td>
+      <td>64.6</td>
+      <td>64.8</td>
+      <td>65.0</td>
+      <td>65.9</td>
+      <td>66.5</td>
+      <td>65.9</td>
+      <td>65.8</td>
+      <td>65.6</td>
+      <td>66.0</td>
+      <td>66.4</td>
+      <td>67.0</td>
+      <td>67.4</td>
+      <td>67.7</td>
+      <td>68.1</td>
+      <td>68.9</td>
+      <td>69.4</td>
+      <td>69.3</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Croatia</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>58.0</td>
+      <td>56.4</td>
+      <td>53.6</td>
+      <td>52.6</td>
+      <td>52.8</td>
+      <td>54.2</td>
+      <td>55.9</td>
+      <td>56.6</td>
+      <td>58.3</td>
+      <td>60.1</td>
+      <td>61.5</td>
+      <td>61.3</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Hungary</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>58.6</td>
+      <td>59.0</td>
+      <td>59.2</td>
+      <td>60.4</td>
+      <td>61.2</td>
+      <td>64.1</td>
+      <td>66.2</td>
+      <td>68.9</td>
+      <td>69.9</td>
+      <td>71.4</td>
+      <td>72.1</td>
+      <td>71.9</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Ireland</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>62.8</td>
+      <td>61.0</td>
+      <td>60.1</td>
+      <td>60.2</td>
+      <td>61.2</td>
+      <td>62.3</td>
+      <td>63.7</td>
+      <td>65.3</td>
+      <td>66.9</td>
+      <td>67.9</td>
+      <td>68.8</td>
+      <td>65.8</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Iceland</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>77.8</td>
+      <td>77.6</td>
+      <td>77.9</td>
+      <td>79.1</td>
+      <td>79.5</td>
+      <td>81.7</td>
+      <td>83.3</td>
+      <td>84.4</td>
+      <td>84.5</td>
+      <td>83.2</td>
+      <td>83.0</td>
+      <td>79.2</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Italy</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>49.5</td>
+      <td>49.2</td>
+      <td>49.6</td>
+      <td>50.1</td>
+      <td>49.6</td>
+      <td>50.1</td>
+      <td>50.5</td>
+      <td>51.6</td>
+      <td>52.5</td>
+      <td>53.2</td>
+      <td>53.9</td>
+      <td>52.1</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Lithuania</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>67.2</td>
+      <td>65.0</td>
+      <td>66.6</td>
+      <td>67.9</td>
+      <td>68.6</td>
+      <td>70.6</td>
+      <td>72.2</td>
+      <td>74.3</td>
+      <td>75.5</td>
+      <td>76.7</td>
+      <td>77.4</td>
+      <td>75.8</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Luxembourg</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>61.5</td>
+      <td>62.0</td>
+      <td>61.9</td>
+      <td>64.1</td>
+      <td>63.9</td>
+      <td>65.5</td>
+      <td>65.0</td>
+      <td>65.1</td>
+      <td>67.5</td>
+      <td>68.0</td>
+      <td>68.1</td>
+      <td>68.5</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Latvia</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>66.2</td>
+      <td>64.2</td>
+      <td>65.1</td>
+      <td>66.2</td>
+      <td>67.5</td>
+      <td>68.4</td>
+      <td>70.5</td>
+      <td>71.7</td>
+      <td>72.6</td>
+      <td>74.7</td>
+      <td>75.5</td>
+      <td>75.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Montenegro</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>44.4</td>
+      <td>46.2</td>
+      <td>47.5</td>
+      <td>49.7</td>
+      <td>51.6</td>
+      <td>51.3</td>
+      <td>51.4</td>
+      <td>52.9</td>
+      <td>54.2</td>
+      <td>48.8</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>North Macedonia</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>37.1</td>
+      <td>37.5</td>
+      <td>38.8</td>
+      <td>38.7</td>
+      <td>40.7</td>
+      <td>40.8</td>
+      <td>42.1</td>
+      <td>42.5</td>
+      <td>43.7</td>
+      <td>45.2</td>
+      <td>48.4</td>
+      <td>49.0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Malta</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>40.0</td>
+      <td>41.6</td>
+      <td>43.8</td>
+      <td>48.0</td>
+      <td>51.7</td>
+      <td>54.3</td>
+      <td>55.3</td>
+      <td>58.0</td>
+      <td>60.6</td>
+      <td>64.1</td>
+      <td>65.8</td>
+      <td>67.8</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Netherlands</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>70.9</td>
+      <td>70.9</td>
+      <td>71.5</td>
+      <td>72.0</td>
+      <td>71.7</td>
+      <td>70.8</td>
+      <td>71.9</td>
+      <td>72.7</td>
+      <td>73.9</td>
+      <td>75.2</td>
+      <td>76.5</td>
+      <td>76.6</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Norway</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>77.9</td>
+      <td>76.9</td>
+      <td>77.1</td>
+      <td>77.3</td>
+      <td>77.1</td>
+      <td>77.1</td>
+      <td>76.7</td>
+      <td>76.7</td>
+      <td>76.2</td>
+      <td>76.5</td>
+      <td>76.8</td>
+      <td>76.5</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Poland</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>55.6</td>
+      <td>55.6</td>
+      <td>55.8</td>
+      <td>56.2</td>
+      <td>56.3</td>
+      <td>58.2</td>
+      <td>59.9</td>
+      <td>61.5</td>
+      <td>63.0</td>
+      <td>64.5</td>
+      <td>64.9</td>
+      <td>65.2</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Portugal</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>62.3</td>
+      <td>62.1</td>
+      <td>62.4</td>
+      <td>60.8</td>
+      <td>60.5</td>
+      <td>62.9</td>
+      <td>64.8</td>
+      <td>66.4</td>
+      <td>69.0</td>
+      <td>71.5</td>
+      <td>72.2</td>
+      <td>71.4</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Romania</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>45.2</td>
+      <td>47.6</td>
+      <td>47.7</td>
+      <td>48.2</td>
+      <td>48.2</td>
+      <td>49.2</td>
+      <td>50.3</td>
+      <td>51.4</td>
+      <td>54.0</td>
+      <td>54.5</td>
+      <td>55.4</td>
+      <td>55.4</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Serbia</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>44.5</td>
+      <td>42.6</td>
+      <td>42.3</td>
+      <td>44.3</td>
+      <td>45.7</td>
+      <td>46.8</td>
+      <td>50.1</td>
+      <td>52.6</td>
+      <td>53.9</td>
+      <td>56.3</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Sweden</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>74.9</td>
+      <td>74.2</td>
+      <td>75.7</td>
+      <td>76.1</td>
+      <td>76.4</td>
+      <td>76.9</td>
+      <td>77.6</td>
+      <td>78.4</td>
+      <td>79.0</td>
+      <td>79.4</td>
+      <td>78.9</td>
+      <td>77.4</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Slovenia</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>67.6</td>
+      <td>66.0</td>
+      <td>64.4</td>
+      <td>64.2</td>
+      <td>62.6</td>
+      <td>63.2</td>
+      <td>64.2</td>
+      <td>66.2</td>
+      <td>69.3</td>
+      <td>71.2</td>
+      <td>72.5</td>
+      <td>71.7</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Slovakia</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>62.4</td>
+      <td>61.6</td>
+      <td>61.6</td>
+      <td>61.5</td>
+      <td>62.0</td>
+      <td>62.9</td>
+      <td>64.6</td>
+      <td>67.2</td>
+      <td>69.4</td>
+      <td>70.3</td>
+      <td>71.7</td>
+      <td>70.9</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Türkiye</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>25.8</td>
+      <td>28.0</td>
+      <td>29.7</td>
+      <td>30.9</td>
+      <td>31.8</td>
+      <td>31.6</td>
+      <td>32.5</td>
+      <td>33.2</td>
+      <td>34.5</td>
+      <td>35.2</td>
+      <td>34.4</td>
+      <td>32.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="83190c92-5ee4-4a8e-8fe9-651431c252bd" class="cell markdown">
+<h4 id="data-cleaning-and-exploration">DATA CLEANING AND
+EXPLORATION</h4>
+</div>
+<div id="a8a650fd-feaf-406c-9518-62b6ef905292" class="cell markdown">
+<p>The data for our employment rate in EU comes with a lot of NAN values
+which will hinder our analysis. The next step for our analysis is to
+drop all NAN values in our Dataset.</p>
+</div>
+<div id="9711574b-df36-4829-afc5-c11a02ef17f7" class="cell code"
+data-execution_count="4" data-tags="[]">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#dropping of NAN values in our dataset</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>employment_rate <span class="op">=</span> employment_rate.drop(columns<span class="op">=</span>[<span class="st">&#39;2003&#39;</span>,	<span class="st">&#39;2004&#39;</span>,	<span class="st">&#39;2005&#39;</span>,	<span class="st">&#39;2006&#39;</span>,	<span class="st">&#39;2007&#39;</span>,	<span class="st">&#39;2008&#39;</span>])</span></code></pre></div>
+</div>
+<div id="da2cf4a1-bde4-44df-9939-40a8ff50bbc0" class="cell code"
+data-execution_count="5" data-tags="[]">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>employment_rate</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Geographic region\Time</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Austria</td>
+      <td>68.2</td>
+      <td>68.8</td>
+      <td>69.2</td>
+      <td>69.6</td>
+      <td>70.0</td>
+      <td>70.1</td>
+      <td>70.2</td>
+      <td>70.9</td>
+      <td>71.4</td>
+      <td>71.7</td>
+      <td>72.4</td>
+      <td>70.6</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Belgium</td>
+      <td>61.0</td>
+      <td>61.6</td>
+      <td>61.5</td>
+      <td>61.7</td>
+      <td>62.1</td>
+      <td>62.9</td>
+      <td>63.0</td>
+      <td>63.0</td>
+      <td>63.6</td>
+      <td>65.5</td>
+      <td>66.5</td>
+      <td>65.6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Bulgaria</td>
+      <td>63.6</td>
+      <td>60.3</td>
+      <td>59.4</td>
+      <td>59.8</td>
+      <td>60.2</td>
+      <td>61.5</td>
+      <td>63.3</td>
+      <td>63.6</td>
+      <td>66.8</td>
+      <td>67.8</td>
+      <td>70.2</td>
+      <td>68.5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Switzerland</td>
+      <td>NaN</td>
+      <td>73.2</td>
+      <td>74.6</td>
+      <td>75.3</td>
+      <td>75.3</td>
+      <td>76.2</td>
+      <td>76.8</td>
+      <td>77.5</td>
+      <td>77.4</td>
+      <td>77.9</td>
+      <td>78.6</td>
+      <td>78.3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Cyprus</td>
+      <td>68.3</td>
+      <td>68.8</td>
+      <td>67.7</td>
+      <td>64.8</td>
+      <td>62.2</td>
+      <td>63.9</td>
+      <td>64.0</td>
+      <td>64.1</td>
+      <td>66.2</td>
+      <td>68.9</td>
+      <td>70.1</td>
+      <td>69.1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Czechia</td>
+      <td>61.4</td>
+      <td>60.9</td>
+      <td>61.7</td>
+      <td>62.5</td>
+      <td>63.8</td>
+      <td>64.7</td>
+      <td>66.4</td>
+      <td>68.6</td>
+      <td>70.5</td>
+      <td>72.2</td>
+      <td>72.7</td>
+      <td>71.9</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Germany</td>
+      <td>67.8</td>
+      <td>68.8</td>
+      <td>70.3</td>
+      <td>70.7</td>
+      <td>71.5</td>
+      <td>72.1</td>
+      <td>72.6</td>
+      <td>73.5</td>
+      <td>74.2</td>
+      <td>74.8</td>
+      <td>75.5</td>
+      <td>74.5</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Denmark</td>
+      <td>73.1</td>
+      <td>72.0</td>
+      <td>71.4</td>
+      <td>71.1</td>
+      <td>71.2</td>
+      <td>71.0</td>
+      <td>71.5</td>
+      <td>72.5</td>
+      <td>73.2</td>
+      <td>73.9</td>
+      <td>74.7</td>
+      <td>74.3</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Euro area (19 countries)</td>
+      <td>61.7</td>
+      <td>61.6</td>
+      <td>62.0</td>
+      <td>61.9</td>
+      <td>62.0</td>
+      <td>62.7</td>
+      <td>63.4</td>
+      <td>64.4</td>
+      <td>65.4</td>
+      <td>66.4</td>
+      <td>67.2</td>
+      <td>66.1</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Estonia</td>
+      <td>69.9</td>
+      <td>67.4</td>
+      <td>68.6</td>
+      <td>71.1</td>
+      <td>71.6</td>
+      <td>71.9</td>
+      <td>73.7</td>
+      <td>73.7</td>
+      <td>76.8</td>
+      <td>76.8</td>
+      <td>77.5</td>
+      <td>76.9</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Greece</td>
+      <td>52.4</td>
+      <td>51.2</td>
+      <td>48.1</td>
+      <td>44.6</td>
+      <td>42.9</td>
+      <td>43.8</td>
+      <td>45.6</td>
+      <td>46.2</td>
+      <td>47.4</td>
+      <td>48.3</td>
+      <td>50.5</td>
+      <td>48.7</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Spain</td>
+      <td>56.8</td>
+      <td>56.3</td>
+      <td>56.1</td>
+      <td>54.6</td>
+      <td>53.8</td>
+      <td>54.8</td>
+      <td>56.4</td>
+      <td>58.1</td>
+      <td>59.6</td>
+      <td>61.0</td>
+      <td>62.1</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>European Union - 27 countries (from 2020)</td>
+      <td>60.6</td>
+      <td>60.7</td>
+      <td>60.9</td>
+      <td>61.0</td>
+      <td>61.1</td>
+      <td>62.0</td>
+      <td>63.0</td>
+      <td>64.1</td>
+      <td>65.2</td>
+      <td>66.3</td>
+      <td>67.1</td>
+      <td>66.2</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Finland</td>
+      <td>71.5</td>
+      <td>70.3</td>
+      <td>70.7</td>
+      <td>71.3</td>
+      <td>71.0</td>
+      <td>71.2</td>
+      <td>70.7</td>
+      <td>70.8</td>
+      <td>71.3</td>
+      <td>73.4</td>
+      <td>74.5</td>
+      <td>73.8</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>France</td>
+      <td>65.9</td>
+      <td>65.8</td>
+      <td>65.6</td>
+      <td>66.0</td>
+      <td>66.4</td>
+      <td>67.0</td>
+      <td>67.4</td>
+      <td>67.7</td>
+      <td>68.1</td>
+      <td>68.9</td>
+      <td>69.4</td>
+      <td>69.3</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Croatia</td>
+      <td>58.0</td>
+      <td>56.4</td>
+      <td>53.6</td>
+      <td>52.6</td>
+      <td>52.8</td>
+      <td>54.2</td>
+      <td>55.9</td>
+      <td>56.6</td>
+      <td>58.3</td>
+      <td>60.1</td>
+      <td>61.5</td>
+      <td>61.3</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Hungary</td>
+      <td>58.6</td>
+      <td>59.0</td>
+      <td>59.2</td>
+      <td>60.4</td>
+      <td>61.2</td>
+      <td>64.1</td>
+      <td>66.2</td>
+      <td>68.9</td>
+      <td>69.9</td>
+      <td>71.4</td>
+      <td>72.1</td>
+      <td>71.9</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Ireland</td>
+      <td>62.8</td>
+      <td>61.0</td>
+      <td>60.1</td>
+      <td>60.2</td>
+      <td>61.2</td>
+      <td>62.3</td>
+      <td>63.7</td>
+      <td>65.3</td>
+      <td>66.9</td>
+      <td>67.9</td>
+      <td>68.8</td>
+      <td>65.8</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Iceland</td>
+      <td>77.8</td>
+      <td>77.6</td>
+      <td>77.9</td>
+      <td>79.1</td>
+      <td>79.5</td>
+      <td>81.7</td>
+      <td>83.3</td>
+      <td>84.4</td>
+      <td>84.5</td>
+      <td>83.2</td>
+      <td>83.0</td>
+      <td>79.2</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Italy</td>
+      <td>49.5</td>
+      <td>49.2</td>
+      <td>49.6</td>
+      <td>50.1</td>
+      <td>49.6</td>
+      <td>50.1</td>
+      <td>50.5</td>
+      <td>51.6</td>
+      <td>52.5</td>
+      <td>53.2</td>
+      <td>53.9</td>
+      <td>52.1</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Lithuania</td>
+      <td>67.2</td>
+      <td>65.0</td>
+      <td>66.6</td>
+      <td>67.9</td>
+      <td>68.6</td>
+      <td>70.6</td>
+      <td>72.2</td>
+      <td>74.3</td>
+      <td>75.5</td>
+      <td>76.7</td>
+      <td>77.4</td>
+      <td>75.8</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Luxembourg</td>
+      <td>61.5</td>
+      <td>62.0</td>
+      <td>61.9</td>
+      <td>64.1</td>
+      <td>63.9</td>
+      <td>65.5</td>
+      <td>65.0</td>
+      <td>65.1</td>
+      <td>67.5</td>
+      <td>68.0</td>
+      <td>68.1</td>
+      <td>68.5</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Latvia</td>
+      <td>66.2</td>
+      <td>64.2</td>
+      <td>65.1</td>
+      <td>66.2</td>
+      <td>67.5</td>
+      <td>68.4</td>
+      <td>70.5</td>
+      <td>71.7</td>
+      <td>72.6</td>
+      <td>74.7</td>
+      <td>75.5</td>
+      <td>75.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Montenegro</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>44.4</td>
+      <td>46.2</td>
+      <td>47.5</td>
+      <td>49.7</td>
+      <td>51.6</td>
+      <td>51.3</td>
+      <td>51.4</td>
+      <td>52.9</td>
+      <td>54.2</td>
+      <td>48.8</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>North Macedonia</td>
+      <td>37.1</td>
+      <td>37.5</td>
+      <td>38.8</td>
+      <td>38.7</td>
+      <td>40.7</td>
+      <td>40.8</td>
+      <td>42.1</td>
+      <td>42.5</td>
+      <td>43.7</td>
+      <td>45.2</td>
+      <td>48.4</td>
+      <td>49.0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Malta</td>
+      <td>40.0</td>
+      <td>41.6</td>
+      <td>43.8</td>
+      <td>48.0</td>
+      <td>51.7</td>
+      <td>54.3</td>
+      <td>55.3</td>
+      <td>58.0</td>
+      <td>60.6</td>
+      <td>64.1</td>
+      <td>65.8</td>
+      <td>67.8</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Netherlands</td>
+      <td>70.9</td>
+      <td>70.9</td>
+      <td>71.5</td>
+      <td>72.0</td>
+      <td>71.7</td>
+      <td>70.8</td>
+      <td>71.9</td>
+      <td>72.7</td>
+      <td>73.9</td>
+      <td>75.2</td>
+      <td>76.5</td>
+      <td>76.6</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Norway</td>
+      <td>77.9</td>
+      <td>76.9</td>
+      <td>77.1</td>
+      <td>77.3</td>
+      <td>77.1</td>
+      <td>77.1</td>
+      <td>76.7</td>
+      <td>76.7</td>
+      <td>76.2</td>
+      <td>76.5</td>
+      <td>76.8</td>
+      <td>76.5</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Poland</td>
+      <td>55.6</td>
+      <td>55.6</td>
+      <td>55.8</td>
+      <td>56.2</td>
+      <td>56.3</td>
+      <td>58.2</td>
+      <td>59.9</td>
+      <td>61.5</td>
+      <td>63.0</td>
+      <td>64.5</td>
+      <td>64.9</td>
+      <td>65.2</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Portugal</td>
+      <td>62.3</td>
+      <td>62.1</td>
+      <td>62.4</td>
+      <td>60.8</td>
+      <td>60.5</td>
+      <td>62.9</td>
+      <td>64.8</td>
+      <td>66.4</td>
+      <td>69.0</td>
+      <td>71.5</td>
+      <td>72.2</td>
+      <td>71.4</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Romania</td>
+      <td>45.2</td>
+      <td>47.6</td>
+      <td>47.7</td>
+      <td>48.2</td>
+      <td>48.2</td>
+      <td>49.2</td>
+      <td>50.3</td>
+      <td>51.4</td>
+      <td>54.0</td>
+      <td>54.5</td>
+      <td>55.4</td>
+      <td>55.4</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Serbia</td>
+      <td>NaN</td>
+      <td>44.5</td>
+      <td>42.6</td>
+      <td>42.3</td>
+      <td>44.3</td>
+      <td>45.7</td>
+      <td>46.8</td>
+      <td>50.1</td>
+      <td>52.6</td>
+      <td>53.9</td>
+      <td>56.3</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Sweden</td>
+      <td>74.9</td>
+      <td>74.2</td>
+      <td>75.7</td>
+      <td>76.1</td>
+      <td>76.4</td>
+      <td>76.9</td>
+      <td>77.6</td>
+      <td>78.4</td>
+      <td>79.0</td>
+      <td>79.4</td>
+      <td>78.9</td>
+      <td>77.4</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Slovenia</td>
+      <td>67.6</td>
+      <td>66.0</td>
+      <td>64.4</td>
+      <td>64.2</td>
+      <td>62.6</td>
+      <td>63.2</td>
+      <td>64.2</td>
+      <td>66.2</td>
+      <td>69.3</td>
+      <td>71.2</td>
+      <td>72.5</td>
+      <td>71.7</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Slovakia</td>
+      <td>62.4</td>
+      <td>61.6</td>
+      <td>61.6</td>
+      <td>61.5</td>
+      <td>62.0</td>
+      <td>62.9</td>
+      <td>64.6</td>
+      <td>67.2</td>
+      <td>69.4</td>
+      <td>70.3</td>
+      <td>71.7</td>
+      <td>70.9</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Türkiye</td>
+      <td>25.8</td>
+      <td>28.0</td>
+      <td>29.7</td>
+      <td>30.9</td>
+      <td>31.8</td>
+      <td>31.6</td>
+      <td>32.5</td>
+      <td>33.2</td>
+      <td>34.5</td>
+      <td>35.2</td>
+      <td>34.4</td>
+      <td>32.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="b5d66c88-77c2-481f-9bd0-b3d904221696" class="cell markdown">
+<p>Next is to drop the row number 8 and 12 because they contain data
+which doesn't correspond with our dataset</p>
+</div>
+<div id="4ecdcfbd-d9e5-4bca-9880-e0369a5a074b" class="cell code"
+data-execution_count="6" data-tags="[]">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>employment_rate.drop([<span class="dv">8</span>,<span class="dv">12</span>], axis<span class="op">=</span><span class="dv">0</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>employment_rate</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Geographic region\Time</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Austria</td>
+      <td>68.2</td>
+      <td>68.8</td>
+      <td>69.2</td>
+      <td>69.6</td>
+      <td>70.0</td>
+      <td>70.1</td>
+      <td>70.2</td>
+      <td>70.9</td>
+      <td>71.4</td>
+      <td>71.7</td>
+      <td>72.4</td>
+      <td>70.6</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Belgium</td>
+      <td>61.0</td>
+      <td>61.6</td>
+      <td>61.5</td>
+      <td>61.7</td>
+      <td>62.1</td>
+      <td>62.9</td>
+      <td>63.0</td>
+      <td>63.0</td>
+      <td>63.6</td>
+      <td>65.5</td>
+      <td>66.5</td>
+      <td>65.6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Bulgaria</td>
+      <td>63.6</td>
+      <td>60.3</td>
+      <td>59.4</td>
+      <td>59.8</td>
+      <td>60.2</td>
+      <td>61.5</td>
+      <td>63.3</td>
+      <td>63.6</td>
+      <td>66.8</td>
+      <td>67.8</td>
+      <td>70.2</td>
+      <td>68.5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Switzerland</td>
+      <td>NaN</td>
+      <td>73.2</td>
+      <td>74.6</td>
+      <td>75.3</td>
+      <td>75.3</td>
+      <td>76.2</td>
+      <td>76.8</td>
+      <td>77.5</td>
+      <td>77.4</td>
+      <td>77.9</td>
+      <td>78.6</td>
+      <td>78.3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Cyprus</td>
+      <td>68.3</td>
+      <td>68.8</td>
+      <td>67.7</td>
+      <td>64.8</td>
+      <td>62.2</td>
+      <td>63.9</td>
+      <td>64.0</td>
+      <td>64.1</td>
+      <td>66.2</td>
+      <td>68.9</td>
+      <td>70.1</td>
+      <td>69.1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Czechia</td>
+      <td>61.4</td>
+      <td>60.9</td>
+      <td>61.7</td>
+      <td>62.5</td>
+      <td>63.8</td>
+      <td>64.7</td>
+      <td>66.4</td>
+      <td>68.6</td>
+      <td>70.5</td>
+      <td>72.2</td>
+      <td>72.7</td>
+      <td>71.9</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Germany</td>
+      <td>67.8</td>
+      <td>68.8</td>
+      <td>70.3</td>
+      <td>70.7</td>
+      <td>71.5</td>
+      <td>72.1</td>
+      <td>72.6</td>
+      <td>73.5</td>
+      <td>74.2</td>
+      <td>74.8</td>
+      <td>75.5</td>
+      <td>74.5</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Denmark</td>
+      <td>73.1</td>
+      <td>72.0</td>
+      <td>71.4</td>
+      <td>71.1</td>
+      <td>71.2</td>
+      <td>71.0</td>
+      <td>71.5</td>
+      <td>72.5</td>
+      <td>73.2</td>
+      <td>73.9</td>
+      <td>74.7</td>
+      <td>74.3</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Estonia</td>
+      <td>69.9</td>
+      <td>67.4</td>
+      <td>68.6</td>
+      <td>71.1</td>
+      <td>71.6</td>
+      <td>71.9</td>
+      <td>73.7</td>
+      <td>73.7</td>
+      <td>76.8</td>
+      <td>76.8</td>
+      <td>77.5</td>
+      <td>76.9</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Greece</td>
+      <td>52.4</td>
+      <td>51.2</td>
+      <td>48.1</td>
+      <td>44.6</td>
+      <td>42.9</td>
+      <td>43.8</td>
+      <td>45.6</td>
+      <td>46.2</td>
+      <td>47.4</td>
+      <td>48.3</td>
+      <td>50.5</td>
+      <td>48.7</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Spain</td>
+      <td>56.8</td>
+      <td>56.3</td>
+      <td>56.1</td>
+      <td>54.6</td>
+      <td>53.8</td>
+      <td>54.8</td>
+      <td>56.4</td>
+      <td>58.1</td>
+      <td>59.6</td>
+      <td>61.0</td>
+      <td>62.1</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Finland</td>
+      <td>71.5</td>
+      <td>70.3</td>
+      <td>70.7</td>
+      <td>71.3</td>
+      <td>71.0</td>
+      <td>71.2</td>
+      <td>70.7</td>
+      <td>70.8</td>
+      <td>71.3</td>
+      <td>73.4</td>
+      <td>74.5</td>
+      <td>73.8</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>France</td>
+      <td>65.9</td>
+      <td>65.8</td>
+      <td>65.6</td>
+      <td>66.0</td>
+      <td>66.4</td>
+      <td>67.0</td>
+      <td>67.4</td>
+      <td>67.7</td>
+      <td>68.1</td>
+      <td>68.9</td>
+      <td>69.4</td>
+      <td>69.3</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Croatia</td>
+      <td>58.0</td>
+      <td>56.4</td>
+      <td>53.6</td>
+      <td>52.6</td>
+      <td>52.8</td>
+      <td>54.2</td>
+      <td>55.9</td>
+      <td>56.6</td>
+      <td>58.3</td>
+      <td>60.1</td>
+      <td>61.5</td>
+      <td>61.3</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Hungary</td>
+      <td>58.6</td>
+      <td>59.0</td>
+      <td>59.2</td>
+      <td>60.4</td>
+      <td>61.2</td>
+      <td>64.1</td>
+      <td>66.2</td>
+      <td>68.9</td>
+      <td>69.9</td>
+      <td>71.4</td>
+      <td>72.1</td>
+      <td>71.9</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Ireland</td>
+      <td>62.8</td>
+      <td>61.0</td>
+      <td>60.1</td>
+      <td>60.2</td>
+      <td>61.2</td>
+      <td>62.3</td>
+      <td>63.7</td>
+      <td>65.3</td>
+      <td>66.9</td>
+      <td>67.9</td>
+      <td>68.8</td>
+      <td>65.8</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Iceland</td>
+      <td>77.8</td>
+      <td>77.6</td>
+      <td>77.9</td>
+      <td>79.1</td>
+      <td>79.5</td>
+      <td>81.7</td>
+      <td>83.3</td>
+      <td>84.4</td>
+      <td>84.5</td>
+      <td>83.2</td>
+      <td>83.0</td>
+      <td>79.2</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Italy</td>
+      <td>49.5</td>
+      <td>49.2</td>
+      <td>49.6</td>
+      <td>50.1</td>
+      <td>49.6</td>
+      <td>50.1</td>
+      <td>50.5</td>
+      <td>51.6</td>
+      <td>52.5</td>
+      <td>53.2</td>
+      <td>53.9</td>
+      <td>52.1</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Lithuania</td>
+      <td>67.2</td>
+      <td>65.0</td>
+      <td>66.6</td>
+      <td>67.9</td>
+      <td>68.6</td>
+      <td>70.6</td>
+      <td>72.2</td>
+      <td>74.3</td>
+      <td>75.5</td>
+      <td>76.7</td>
+      <td>77.4</td>
+      <td>75.8</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Luxembourg</td>
+      <td>61.5</td>
+      <td>62.0</td>
+      <td>61.9</td>
+      <td>64.1</td>
+      <td>63.9</td>
+      <td>65.5</td>
+      <td>65.0</td>
+      <td>65.1</td>
+      <td>67.5</td>
+      <td>68.0</td>
+      <td>68.1</td>
+      <td>68.5</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Latvia</td>
+      <td>66.2</td>
+      <td>64.2</td>
+      <td>65.1</td>
+      <td>66.2</td>
+      <td>67.5</td>
+      <td>68.4</td>
+      <td>70.5</td>
+      <td>71.7</td>
+      <td>72.6</td>
+      <td>74.7</td>
+      <td>75.5</td>
+      <td>75.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Montenegro</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>44.4</td>
+      <td>46.2</td>
+      <td>47.5</td>
+      <td>49.7</td>
+      <td>51.6</td>
+      <td>51.3</td>
+      <td>51.4</td>
+      <td>52.9</td>
+      <td>54.2</td>
+      <td>48.8</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>North Macedonia</td>
+      <td>37.1</td>
+      <td>37.5</td>
+      <td>38.8</td>
+      <td>38.7</td>
+      <td>40.7</td>
+      <td>40.8</td>
+      <td>42.1</td>
+      <td>42.5</td>
+      <td>43.7</td>
+      <td>45.2</td>
+      <td>48.4</td>
+      <td>49.0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Malta</td>
+      <td>40.0</td>
+      <td>41.6</td>
+      <td>43.8</td>
+      <td>48.0</td>
+      <td>51.7</td>
+      <td>54.3</td>
+      <td>55.3</td>
+      <td>58.0</td>
+      <td>60.6</td>
+      <td>64.1</td>
+      <td>65.8</td>
+      <td>67.8</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Netherlands</td>
+      <td>70.9</td>
+      <td>70.9</td>
+      <td>71.5</td>
+      <td>72.0</td>
+      <td>71.7</td>
+      <td>70.8</td>
+      <td>71.9</td>
+      <td>72.7</td>
+      <td>73.9</td>
+      <td>75.2</td>
+      <td>76.5</td>
+      <td>76.6</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Norway</td>
+      <td>77.9</td>
+      <td>76.9</td>
+      <td>77.1</td>
+      <td>77.3</td>
+      <td>77.1</td>
+      <td>77.1</td>
+      <td>76.7</td>
+      <td>76.7</td>
+      <td>76.2</td>
+      <td>76.5</td>
+      <td>76.8</td>
+      <td>76.5</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Poland</td>
+      <td>55.6</td>
+      <td>55.6</td>
+      <td>55.8</td>
+      <td>56.2</td>
+      <td>56.3</td>
+      <td>58.2</td>
+      <td>59.9</td>
+      <td>61.5</td>
+      <td>63.0</td>
+      <td>64.5</td>
+      <td>64.9</td>
+      <td>65.2</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Portugal</td>
+      <td>62.3</td>
+      <td>62.1</td>
+      <td>62.4</td>
+      <td>60.8</td>
+      <td>60.5</td>
+      <td>62.9</td>
+      <td>64.8</td>
+      <td>66.4</td>
+      <td>69.0</td>
+      <td>71.5</td>
+      <td>72.2</td>
+      <td>71.4</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Romania</td>
+      <td>45.2</td>
+      <td>47.6</td>
+      <td>47.7</td>
+      <td>48.2</td>
+      <td>48.2</td>
+      <td>49.2</td>
+      <td>50.3</td>
+      <td>51.4</td>
+      <td>54.0</td>
+      <td>54.5</td>
+      <td>55.4</td>
+      <td>55.4</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Serbia</td>
+      <td>NaN</td>
+      <td>44.5</td>
+      <td>42.6</td>
+      <td>42.3</td>
+      <td>44.3</td>
+      <td>45.7</td>
+      <td>46.8</td>
+      <td>50.1</td>
+      <td>52.6</td>
+      <td>53.9</td>
+      <td>56.3</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Sweden</td>
+      <td>74.9</td>
+      <td>74.2</td>
+      <td>75.7</td>
+      <td>76.1</td>
+      <td>76.4</td>
+      <td>76.9</td>
+      <td>77.6</td>
+      <td>78.4</td>
+      <td>79.0</td>
+      <td>79.4</td>
+      <td>78.9</td>
+      <td>77.4</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Slovenia</td>
+      <td>67.6</td>
+      <td>66.0</td>
+      <td>64.4</td>
+      <td>64.2</td>
+      <td>62.6</td>
+      <td>63.2</td>
+      <td>64.2</td>
+      <td>66.2</td>
+      <td>69.3</td>
+      <td>71.2</td>
+      <td>72.5</td>
+      <td>71.7</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Slovakia</td>
+      <td>62.4</td>
+      <td>61.6</td>
+      <td>61.6</td>
+      <td>61.5</td>
+      <td>62.0</td>
+      <td>62.9</td>
+      <td>64.6</td>
+      <td>67.2</td>
+      <td>69.4</td>
+      <td>70.3</td>
+      <td>71.7</td>
+      <td>70.9</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Türkiye</td>
+      <td>25.8</td>
+      <td>28.0</td>
+      <td>29.7</td>
+      <td>30.9</td>
+      <td>31.8</td>
+      <td>31.6</td>
+      <td>32.5</td>
+      <td>33.2</td>
+      <td>34.5</td>
+      <td>35.2</td>
+      <td>34.4</td>
+      <td>32.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="fdeb408b-2132-43e3-a4cf-a8ce55778b43" class="cell markdown">
+<h5 id="explore-our-dataset">EXPLORE OUR DATASET</h5>
+</div>
+<div id="61408ccf-5e03-4453-a92d-3273597f20c3" class="cell code"
+data-execution_count="7" data-tags="[]">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking the shape of the dataframe</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>employment_rate.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="7">
+<pre><code>(34, 13)</code></pre>
+</div>
+</div>
+<div id="027b3db3-206d-4761-bc9b-92a50e0bf51a" class="cell code"
+data-execution_count="8" data-tags="[]">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Basic info about the DataFramE</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>employment_rate.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Int64Index: 34 entries, 0 to 35
+Data columns (total 13 columns):
+ #   Column                  Non-Null Count  Dtype  
+---  ------                  --------------  -----  
+ 0   Geographic region\Time  34 non-null     object 
+ 1   2009                    31 non-null     float64
+ 2   2010                    33 non-null     float64
+ 3   2011                    34 non-null     float64
+ 4   2012                    34 non-null     float64
+ 5   2013                    34 non-null     float64
+ 6   2014                    34 non-null     float64
+ 7   2015                    34 non-null     float64
+ 8   2016                    34 non-null     float64
+ 9   2017                    34 non-null     float64
+ 10  2018                    34 non-null     float64
+ 11  2019                    34 non-null     float64
+ 12  2020                    34 non-null     float64
+dtypes: float64(12), object(1)
+memory usage: 3.7+ KB
+</code></pre>
+</div>
+</div>
+<div id="bd341a66-fe30-43b9-af37-b0c556da1c8d" class="cell code"
+data-execution_count="9" data-tags="[]">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Checking for duplicates</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>employment_rate.duplicated().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="9">
+<pre><code>0</code></pre>
+</div>
+</div>
+<div id="85a66f28-1017-40ec-8b8b-5ae8227d4ed6" class="cell code"
+data-execution_count="10" data-tags="[]">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Checking for null values</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>employment_rate.isnull().<span class="bu">any</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="10">
+<pre><code>Geographic region\Time    False
+2009                       True
+2010                       True
+2011                      False
+2012                      False
+2013                      False
+2014                      False
+2015                      False
+2016                      False
+2017                      False
+2018                      False
+2019                      False
+2020                      False
+dtype: bool</code></pre>
+</div>
+</div>
+<div id="6343f818-d5e7-4ab2-99d5-52bbf2c3e1ba" class="cell markdown">
+<p>Notice there is null values in our dataset which can be seen in our
+2009 and 2010 columns. Next we have to drop the null values in these
+columns</p>
+</div>
+<div id="3f932b88-1a7e-4cc2-a205-2a4fdbfd8c32" class="cell code"
+data-execution_count="11" data-tags="[]">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>employment_rate <span class="op">=</span> employment_rate.dropna()</span></code></pre></div>
+</div>
+<div id="4fc17f30-8f67-4b04-ae15-6ecf734370f5" class="cell code"
+data-execution_count="12" data-tags="[]">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Rechecking for null values again after dropping the null values in those various columns</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>employment_rate.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="12">
+<pre><code>Geographic region\Time    0
+2009                      0
+2010                      0
+2011                      0
+2012                      0
+2013                      0
+2014                      0
+2015                      0
+2016                      0
+2017                      0
+2018                      0
+2019                      0
+2020                      0
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="a1a8e927-4eac-457f-bc54-c576e7bf7760" class="cell code"
+data-execution_count="13" data-tags="[]">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#rechecking for null values</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>employment_rate.isnull().<span class="bu">any</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="13">
+<pre><code>Geographic region\Time    False
+2009                      False
+2010                      False
+2011                      False
+2012                      False
+2013                      False
+2014                      False
+2015                      False
+2016                      False
+2017                      False
+2018                      False
+2019                      False
+2020                      False
+dtype: bool</code></pre>
+</div>
+</div>
+<div id="a8640c80-fdca-4e7f-b84b-d70517ee4e5c" class="cell markdown">
+<p>Now we have thoroughly checked our dataset and removed all outliers
+than can hinder our analysis. Our dtaset is finally clean</p>
+</div>
+<div id="1b450141-8b09-4085-87c7-40a2805f6dc1" class="cell markdown">
+<h4 id="task-analysis">TASK ANALYSIS</h4>
+</div>
+<div id="0e607ecd-256e-4e38-a485-6c7f6f6e1b59" class="cell markdown">
+<h4 id="question-1">QUESTION 1:</h4>
+<h5
+id="what-is-the-average-employment-rate-of-women-in-the-eu-from-2011-2020">What
+is the average employment rate of women in the EU from 2011-2020?</h5>
+</div>
+<div id="96bee372-92f4-4e50-bf72-7df8175a4e0b" class="cell code"
+data-execution_count="14" data-tags="[]">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>employment_rate.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="14">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Geographic region\Time</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Austria</td>
+      <td>68.2</td>
+      <td>68.8</td>
+      <td>69.2</td>
+      <td>69.6</td>
+      <td>70.0</td>
+      <td>70.1</td>
+      <td>70.2</td>
+      <td>70.9</td>
+      <td>71.4</td>
+      <td>71.7</td>
+      <td>72.4</td>
+      <td>70.6</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Belgium</td>
+      <td>61.0</td>
+      <td>61.6</td>
+      <td>61.5</td>
+      <td>61.7</td>
+      <td>62.1</td>
+      <td>62.9</td>
+      <td>63.0</td>
+      <td>63.0</td>
+      <td>63.6</td>
+      <td>65.5</td>
+      <td>66.5</td>
+      <td>65.6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Bulgaria</td>
+      <td>63.6</td>
+      <td>60.3</td>
+      <td>59.4</td>
+      <td>59.8</td>
+      <td>60.2</td>
+      <td>61.5</td>
+      <td>63.3</td>
+      <td>63.6</td>
+      <td>66.8</td>
+      <td>67.8</td>
+      <td>70.2</td>
+      <td>68.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Cyprus</td>
+      <td>68.3</td>
+      <td>68.8</td>
+      <td>67.7</td>
+      <td>64.8</td>
+      <td>62.2</td>
+      <td>63.9</td>
+      <td>64.0</td>
+      <td>64.1</td>
+      <td>66.2</td>
+      <td>68.9</td>
+      <td>70.1</td>
+      <td>69.1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Czechia</td>
+      <td>61.4</td>
+      <td>60.9</td>
+      <td>61.7</td>
+      <td>62.5</td>
+      <td>63.8</td>
+      <td>64.7</td>
+      <td>66.4</td>
+      <td>68.6</td>
+      <td>70.5</td>
+      <td>72.2</td>
+      <td>72.7</td>
+      <td>71.9</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="129581db-b4a8-4347-b8a7-23c551223329" class="cell code"
+data-execution_count="15">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>employment_rate_average <span class="op">=</span> employment_rate[[<span class="st">&quot;2011&quot;</span>, <span class="st">&quot;2012&quot;</span>, <span class="st">&quot;2013&quot;</span>, <span class="st">&quot;2014&quot;</span>, <span class="st">&quot;2015&quot;</span>, <span class="st">&quot;2016&quot;</span>, <span class="st">&quot;2017&quot;</span>, <span class="st">&quot;2018&quot;</span>, <span class="st">&quot;2019&quot;</span>, <span class="st">&quot;2020&quot;</span>]].mean()</span></code></pre></div>
+</div>
+<div id="437b90be-7da6-4bd4-9cfb-8eb288fbe8bd" class="cell code"
+data-execution_count="16">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>employment_rate_average.<span class="bu">round</span>(<span class="dv">2</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="16">
+<pre><code>2011    61.06
+2012    61.36
+2013    61.61
+2014    62.57
+2015    63.61
+2016    64.67
+2017    66.11
+2018    67.29
+2019    68.19
+2020    67.31
+dtype: float64</code></pre>
+</div>
+</div>
+<div id="e0365141-2839-49a1-8c24-91e44c58a0f6" class="cell code"
+data-execution_count="17" data-tags="[]">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Converting the employment_rate_average for each year into pandas dataframe for easy save into excel file</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>year_2011 <span class="op">=</span> [<span class="fl">61.06</span>]</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>year_2012 <span class="op">=</span> [<span class="fl">61.36</span>]</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>year_2013 <span class="op">=</span> [<span class="fl">61.61</span>]</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>year_2014 <span class="op">=</span> [<span class="fl">62.57</span>]</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>year_2015 <span class="op">=</span> [<span class="fl">63.61</span>]</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>year_2016 <span class="op">=</span> [<span class="fl">64.67</span>]</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>year_2017 <span class="op">=</span> [<span class="fl">66.11</span>]</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>year_2018 <span class="op">=</span> [<span class="fl">67.29</span>]</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>year_2019 <span class="op">=</span> [<span class="fl">68.19</span>]</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>year_2020 <span class="op">=</span> [<span class="fl">67.31</span>]</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame([year_2011, year_2012, year_2013, year_2014, year_2015, year_2016, year_2017, year_2018, year_2019, year_2020]) </span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.transpose() </span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [<span class="st">&quot;year_2011&quot;</span>, <span class="st">&quot;year_2012&quot;</span>, <span class="st">&quot;year_2013&quot;</span>, <span class="st">&quot;year_2014&quot;</span>, <span class="st">&quot;year_2015&quot;</span>, <span class="st">&quot;year_2016&quot;</span>, <span class="st">&quot;year_2017&quot;</span>, <span class="st">&quot;year_2018&quot;</span>, <span class="st">&quot;year_2019&quot;</span>, <span class="st">&quot;year2020&quot;</span>] </span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="17">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year_2011</th>
+      <th>year_2012</th>
+      <th>year_2013</th>
+      <th>year_2014</th>
+      <th>year_2015</th>
+      <th>year_2016</th>
+      <th>year_2017</th>
+      <th>year_2018</th>
+      <th>year_2019</th>
+      <th>year2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>61.06</td>
+      <td>61.36</td>
+      <td>61.61</td>
+      <td>62.57</td>
+      <td>63.61</td>
+      <td>64.67</td>
+      <td>66.11</td>
+      <td>67.29</td>
+      <td>68.19</td>
+      <td>67.31</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="0ac92945-878c-4bcf-95d7-3d9e73442d74" class="cell code"
+data-execution_count="18" data-tags="[]">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>employment_rate_average <span class="op">=</span> df</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>employment_rate_average.columns <span class="op">=</span> [<span class="st">&#39;2011&#39;</span>, <span class="st">&#39;2012&#39;</span>, <span class="st">&#39;2013&#39;</span>, <span class="st">&#39;2014&#39;</span>, <span class="st">&#39;2015&#39;</span>, <span class="st">&#39;2016&#39;</span>, <span class="st">&#39;2017&#39;</span>, <span class="st">&#39;2018&#39;</span>, <span class="st">&#39;2019&#39;</span>, <span class="st">&#39;2020&#39;</span>]</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>employment_rate_average</span></code></pre></div>
+<div class="output execute_result" data-execution_count="18">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>61.06</td>
+      <td>61.36</td>
+      <td>61.61</td>
+      <td>62.57</td>
+      <td>63.61</td>
+      <td>64.67</td>
+      <td>66.11</td>
+      <td>67.29</td>
+      <td>68.19</td>
+      <td>67.31</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="26ca3562-0d75-4d90-a637-cbb987a84bd7" class="cell code"
+data-execution_count="19" data-tags="[]">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Save dataframe to Excel Workbook</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>employment_rate_average.to_excel(<span class="st">&quot;employment_rate_average_2011_to_2020.xlsx&quot;</span>, index <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+</div>
+<div id="a6d51205-7d71-4d19-9444-063b56ae7351" class="cell code">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div id="77956498-9c7d-47d3-93eb-650e57147cd6" class="cell markdown">
+<h4 id="question-2">QUESTION 2:</h4>
+<h5
+id="how-is-the-rate-of-change-for-women-employment-in-the-eu-from-2011-2020">How
+is the rate of change for women employment in the EU from 2011-2020</h5>
+</div>
+<div id="0709cefe-9199-42f8-88e3-58aa19d7e852" class="cell markdown">
+<p>To find the rate of change for each year from 2011 to 2020, we have
+to find the total percentage sum for each year.</p>
+</div>
+<div id="b40e2579-27d8-4a21-ac9a-5f6585f06fb8" class="cell code"
+data-execution_count="20" data-tags="[]">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">#To find the total percent sum for each year, we have to drop the string column in order for our syntax to read our data</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>employment_rate_drop <span class="op">=</span> employment_rate.drop(columns<span class="op">=</span>[<span class="st">&#39;Geographic region\Time&#39;</span>,<span class="st">&#39;2009&#39;</span>,<span class="st">&#39;2010&#39;</span>])</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>employment_rate_drop.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>69.2</td>
+      <td>69.6</td>
+      <td>70.0</td>
+      <td>70.1</td>
+      <td>70.2</td>
+      <td>70.9</td>
+      <td>71.4</td>
+      <td>71.7</td>
+      <td>72.4</td>
+      <td>70.6</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>61.5</td>
+      <td>61.7</td>
+      <td>62.1</td>
+      <td>62.9</td>
+      <td>63.0</td>
+      <td>63.0</td>
+      <td>63.6</td>
+      <td>65.5</td>
+      <td>66.5</td>
+      <td>65.6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>59.4</td>
+      <td>59.8</td>
+      <td>60.2</td>
+      <td>61.5</td>
+      <td>63.3</td>
+      <td>63.6</td>
+      <td>66.8</td>
+      <td>67.8</td>
+      <td>70.2</td>
+      <td>68.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>67.7</td>
+      <td>64.8</td>
+      <td>62.2</td>
+      <td>63.9</td>
+      <td>64.0</td>
+      <td>64.1</td>
+      <td>66.2</td>
+      <td>68.9</td>
+      <td>70.1</td>
+      <td>69.1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>61.7</td>
+      <td>62.5</td>
+      <td>63.8</td>
+      <td>64.7</td>
+      <td>66.4</td>
+      <td>68.6</td>
+      <td>70.5</td>
+      <td>72.2</td>
+      <td>72.7</td>
+      <td>71.9</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="e594f8bc-7718-4bfe-b2e7-fb6dbd563d53" class="cell code"
+data-execution_count="21" data-tags="[]">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Total percent sum for each year</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>total_percent_sum <span class="op">=</span> employment_rate_drop.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>total_percent_sum</span></code></pre></div>
+<div class="output execute_result" data-execution_count="21">
+<pre><code>2011    1892.8
+2012    1902.3
+2013    1910.0
+2014    1939.7
+2015    1972.0
+2016    2004.8
+2017    2049.4
+2018    2086.0
+2019    2113.9
+2020    2086.7
+dtype: float64</code></pre>
+</div>
+</div>
+<div id="a317ceec-f67b-4bbf-936e-3724c9a6a435" class="cell code"
+data-execution_count="22" data-tags="[]">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Converting total percent sum for each year into pandas dataframe for easy save into excel file</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>year_2011 <span class="op">=</span> [<span class="fl">1892.8</span>]</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>year_2012 <span class="op">=</span> [<span class="fl">1902.3</span>]</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>year_2013 <span class="op">=</span> [<span class="fl">1910.0</span>]</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>year_2014 <span class="op">=</span> [<span class="fl">1939.7</span>]</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>year_2015 <span class="op">=</span> [<span class="fl">1972.0</span>]</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>year_2016 <span class="op">=</span> [<span class="fl">2004.8</span>]</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>year_2017 <span class="op">=</span> [<span class="fl">2049.4</span>]</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>year_2018 <span class="op">=</span> [<span class="fl">2086.0</span>]</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>year_2019 <span class="op">=</span> [<span class="fl">2113.9</span>]</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>year_2020 <span class="op">=</span> [<span class="fl">2086.7</span>]</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame([year_2011, year_2012, year_2013, year_2014, year_2015, year_2016, year_2017, year_2018, year_2019, year_2020]) </span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> data.transpose() </span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>data.columns <span class="op">=</span> [<span class="st">&quot;year_2011&quot;</span>, <span class="st">&quot;year_2012&quot;</span>, <span class="st">&quot;year_2013&quot;</span>, <span class="st">&quot;year_2014&quot;</span>, <span class="st">&quot;year_2015&quot;</span>, <span class="st">&quot;year_2016&quot;</span>, <span class="st">&quot;year_2017&quot;</span>, <span class="st">&quot;year_2018&quot;</span>, <span class="st">&quot;year_2019&quot;</span>, <span class="st">&quot;year2020&quot;</span>] </span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>data.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="22">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year_2011</th>
+      <th>year_2012</th>
+      <th>year_2013</th>
+      <th>year_2014</th>
+      <th>year_2015</th>
+      <th>year_2016</th>
+      <th>year_2017</th>
+      <th>year_2018</th>
+      <th>year_2019</th>
+      <th>year2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1892.8</td>
+      <td>1902.3</td>
+      <td>1910.0</td>
+      <td>1939.7</td>
+      <td>1972.0</td>
+      <td>2004.8</td>
+      <td>2049.4</td>
+      <td>2086.0</td>
+      <td>2113.9</td>
+      <td>2086.7</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="23c80f8c-fa1f-496a-a774-d2439f9356be" class="cell code"
+data-execution_count="23" data-tags="[]">
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>percent_sum <span class="op">=</span> data</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>percent_sum.columns <span class="op">=</span> [<span class="st">&#39;2011&#39;</span>, <span class="st">&#39;2012&#39;</span>, <span class="st">&#39;2013&#39;</span>, <span class="st">&#39;2014&#39;</span>, <span class="st">&#39;2015&#39;</span>, <span class="st">&#39;2016&#39;</span>, <span class="st">&#39;2017&#39;</span>, <span class="st">&#39;2018&#39;</span>, <span class="st">&#39;2019&#39;</span>, <span class="st">&#39;2020&#39;</span>]</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>percent_sum</span></code></pre></div>
+<div class="output execute_result" data-execution_count="23">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1892.8</td>
+      <td>1902.3</td>
+      <td>1910.0</td>
+      <td>1939.7</td>
+      <td>1972.0</td>
+      <td>2004.8</td>
+      <td>2049.4</td>
+      <td>2086.0</td>
+      <td>2113.9</td>
+      <td>2086.7</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="b6332c74-416a-4948-a38d-12b4dc47c6b0" class="cell code"
+data-execution_count="24" data-tags="[]">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Save dataframe to Excel Workbook</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>percent_sum.to_excel(<span class="st">&quot;total_percent_sum_2011_to_2020.xlsx&quot;</span>, index <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+</div>
+<div id="8fecbe27-71bc-42fd-80b8-e1928f783e28" class="cell code">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div id="f2f7e474-567c-4481-a934-6ffdd0873e3d" class="cell markdown">
+<p>Next, is to find the rate of change for women employment in the EU
+from 2011-2020</p>
+</div>
+<div id="960fc0f0-c3c9-4134-b385-c71d85d36b2e" class="cell code"
+data-execution_count="25" data-tags="[]">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co">#The change in employment rate from 2011 to 2020</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>total_percent_sum.pct_change().<span class="bu">round</span>(<span class="dv">3</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="25">
+<pre><code>2011      NaN
+2012    0.005
+2013    0.004
+2014    0.016
+2015    0.017
+2016    0.017
+2017    0.022
+2018    0.018
+2019    0.013
+2020   -0.013
+dtype: float64</code></pre>
+</div>
+</div>
+<div id="2d764a9d-4c4f-4d6e-b414-6621adaccc40" class="cell code"
+data-execution_count="26" data-tags="[]">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Converting the change in years into pandas dataframe for easy save into excel file</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>year_2012 <span class="op">=</span> [<span class="fl">0.005</span>]</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>year_2013 <span class="op">=</span> [<span class="fl">0.004</span>]</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>year_2014 <span class="op">=</span> [<span class="fl">0.016</span>]</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>year_2015 <span class="op">=</span> [<span class="fl">0.017</span>]</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>year_2016 <span class="op">=</span> [<span class="fl">0.017</span>]</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>year_2017 <span class="op">=</span> [<span class="fl">0.022</span>]</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>year_2018 <span class="op">=</span> [<span class="fl">0.018</span>]</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>year_2019 <span class="op">=</span> [<span class="fl">0.013</span>]</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>year_2020 <span class="op">=</span> [<span class="op">-</span><span class="fl">0.013</span>]</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>data1 <span class="op">=</span> pd.DataFrame([year_2012, year_2013, year_2014, year_2015, year_2016, year_2017, year_2018, year_2019, year_2020]) </span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>data1 <span class="op">=</span> data1.transpose() </span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>data1.columns <span class="op">=</span> [<span class="st">&quot;year_2012&quot;</span>, <span class="st">&quot;year_2013&quot;</span>, <span class="st">&quot;year_2014&quot;</span>, <span class="st">&quot;year_2015&quot;</span>, <span class="st">&quot;year_2016&quot;</span>, <span class="st">&quot;year_2017&quot;</span>, <span class="st">&quot;year_2018&quot;</span>, <span class="st">&quot;year_2019&quot;</span>, <span class="st">&quot;year2020&quot;</span>] </span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>data1.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="26">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year_2012</th>
+      <th>year_2013</th>
+      <th>year_2014</th>
+      <th>year_2015</th>
+      <th>year_2016</th>
+      <th>year_2017</th>
+      <th>year_2018</th>
+      <th>year_2019</th>
+      <th>year2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.005</td>
+      <td>0.004</td>
+      <td>0.016</td>
+      <td>0.017</td>
+      <td>0.017</td>
+      <td>0.022</td>
+      <td>0.018</td>
+      <td>0.013</td>
+      <td>-0.013</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="e7060303-b271-4633-8878-deceb5446d1d" class="cell code"
+data-execution_count="27" data-tags="[]">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>change <span class="op">=</span> data1</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>change.columns <span class="op">=</span> [<span class="st">&#39;2012&#39;</span>, <span class="st">&#39;2013&#39;</span>, <span class="st">&#39;2014&#39;</span>, <span class="st">&#39;2015&#39;</span>, <span class="st">&#39;2016&#39;</span>, <span class="st">&#39;2017&#39;</span>, <span class="st">&#39;2018&#39;</span>, <span class="st">&#39;2019&#39;</span>, <span class="st">&#39;2020&#39;</span>]</span></code></pre></div>
+</div>
+<div id="b6c98949-0663-4400-ba8f-131239c71618" class="cell code"
+data-execution_count="28" data-tags="[]">
+<div class="sourceCode" id="cb39"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>change</span></code></pre></div>
+<div class="output execute_result" data-execution_count="28">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.005</td>
+      <td>0.004</td>
+      <td>0.016</td>
+      <td>0.017</td>
+      <td>0.017</td>
+      <td>0.022</td>
+      <td>0.018</td>
+      <td>0.013</td>
+      <td>-0.013</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="ae13ec33-b76e-4878-94d9-785a1df77369" class="cell code">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Save dataframe to Excel Workbook</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>change.to_excel(<span class="st">&quot;change_in_employment_rate_from_2011_to_2020.xlsx&quot;</span>, index <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+</div>
+<div id="c9403635-8322-45b2-ae21-57824ab2b10d" class="cell markdown">
+<h5 id="my-visualization-will-be-on-tableau">MY VISUALIZATION WILL BE ON
+TABLEAU</h5>
+</div>
+<div id="5a7c6ca4-5db5-4522-b56a-f26b859051a4" class="cell code">
+<div class="sourceCode" id="cb41"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>
